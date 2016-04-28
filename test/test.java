@@ -11,16 +11,16 @@ import com.busap.vcs.service.FileService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-@Service("fileServiceImpl")
+@Service("fileServiceImpl") 
 public class FileServiceImpl implements FileService {
 
     /**
-     * 默认上传到当前用户目录
+     * 榛樿涓婁紶鍒板綋鍓嶇敤鎴风洰褰�
      */
     public static String DEFAULT_PATH = "." + File.separator + "files";
 
 
-    // 上传文件保存路径
+    // 涓婁紶鏂囦欢淇濆瓨璺緞
     @Value("${files.localpath}")
     private String path;
 
@@ -60,7 +60,7 @@ public class FileServiceImpl implements FileService {
     }
 
 
-    // 测试
+    // 娴嬭瘯
     public static void main(String[] args) throws Exception {
         FileServiceImpl service = new FileServiceImpl();
         File file = new File("C:/Users/Administrator/Desktop/log.txt");

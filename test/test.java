@@ -11,7 +11,8 @@ import com.busap.vcs.service.FileService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
-@Service("fileServiceImpl") 
+@Service("fileServiceImpl")
+//鬼片是发的发的
 public class FileServiceImpl implements FileService {
 
     /**
